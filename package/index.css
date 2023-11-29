@@ -1,0 +1,65 @@
+/* Flowchart Container */
+#flowchart-container {
+
+    overflow: auto;
+    /* Flex */
+    display: grid;
+}
+
+#flowchart-container.horizontal {
+    flex-direction: row;
+}
+
+#flowchart-container.vertical {
+    flex-direction: column;
+}
+
+/* Flowchart Symbols */
+#flowchart-container #flowchart-symbol {
+    /* Size */
+    width: 300px;
+    height: 150px;
+
+    /* Align Center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Border */
+    border: 2px solid black;
+}
+
+
+/* Flowchart Symbol Shapes */
+#flowchart-container #flowchart-symbol[type="square"] {
+    border-radius: 15px;
+}
+
+#flowchart-container #flowchart-symbol[type="circle"] {
+    width: 150px;
+    border-radius: 100%;
+}
+
+/* Flowchart Arrows */
+#flowchart-container #flowchart-arrow {
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Font size */
+    font-size: 40px;
+}
+
+
+#flowchart-container.horizontal #flowchart-arrow {
+    /* Size */
+    width: 50px;
+    height: 150px;
+}
+
+#flowchart-container.vertical #flowchart-arrow {
+    /* Size */
+    width: 300px;
+    height: 50px;
+}
